@@ -2,6 +2,8 @@
 
 When I was layouting som litte board in KiCAD I found it very annoying that I could not hide some of the ratnests lines (for instance having a 4 Layer print but still going GND and VCC ratnest all over the place). This Little Plugin can be used to hide and show ratnest lines. Actually, the lines are removed and added to the netlist as required.
 
+IMPORTANT: this plugin manipulates the netlist, by removing hidden nets from it. Do not save your pcb when nets are hidden or the netlist in the saved file might be incomplete. However, if you did mess up the netlist, you can always re-load the netlist from the schematic. However, since this will be a native feature of KiCAD V6 I am stopping further development of this addon.
+
 Usage: copy the folder ShowHideNets to your KiCAD plugin folder (usually ~/.kicad/scripting/plugins) and activate it in pcbnew under Tools/External Plugins/ShowHideNets and it will add three new buttons to KiCADs right vertical Toolbar.
 
 ![Added Buttons](img/toolbar.png)
